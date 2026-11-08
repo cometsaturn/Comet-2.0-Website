@@ -310,7 +310,43 @@
     temporarily keep information such as the participating users,
     board state, and the current game status.
   </p>
+  
+    <h3>Chess functionality</h3>
 
+    <p>
+        Comet includes a chess command that allows users
+        to play against other Discord users or the computer.
+    </p>
+
+    <p>
+        During an active chess game, Comet temporarily
+        processes information such as:
+    </p>
+
+    <ul>
+        <li>Discord user IDs needed to identify players</li>
+        <li>Game moves and the current board state</li>
+        <li>The selected opponent and game status</li>
+    </ul>
+
+    <p>
+        This information is used to operate the active
+        chess game. It is not intended to create permanent
+        player profiles or a historical record of games.
+    </p>
+
+    <p>
+        When playing against the computer, Stockfish runs
+        locally on the Raspberry Pi hosting Comet 2.0.
+        Chess gameplay is not sent to an external chess
+        engine service.
+    </p>
+
+    <p>
+        The chess functionality uses chess.js locally
+        for move validation and game-state management.
+    </p>
+  
   <p>
     This information exists to operate the active game and is not
     intended to form a permanent player database or activity history.
