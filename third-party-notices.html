@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,183 +6,362 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Third-Party Notices | Comet 2.0</title>
+    <meta name="description" content="Third-party software acknowledgements and licences for Comet 2.0.">
 
-    <meta
-        name="description"
-        content="Third-party software acknowledgements and licence information for Comet 2.0."
-    >
+    <style>
+        :root {
+            --bg: #0b0d12;
+            --card: #121620;
+            --text: #f1f3f7;
+            --muted: #a9afbd;
+            --accent: #8b7cff;
+            --border: #252b38;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            background: #0d1017;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav {
+            max-width: 1000px;
+            margin: auto;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--text);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        .hero {
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        section {
+            margin-bottom: 42px;
+            padding: 28px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            font-size: 1.45rem;
+        }
+
+        p {
+            margin: 0 0 14px;
+            color: #d7dae2;
+        }
+
+        ul {
+            margin: 10px 0 18px;
+            padding-left: 24px;
+            color: #d7dae2;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 24px 50px;
+            color: var(--muted);
+            font-size: 0.85rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                padding: 16px;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            main {
+                padding: 40px 18px 60px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+
+<header>
+    <div class="nav">
+        <a class="logo" href="/">☄️ Comet 2.0</a>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/privacy.html">Privacy</a>
+            <a href="/terms.html">Terms</a>
+            <a href="/third-party-notices.html" class="active">Notices</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="hero">
         <h1>Third-Party Notices</h1>
+        <p class="updated">Last updated: 8 November 2026</p>
+
         <p>
-            Comet 2.0 is built with the help of open-source software.
-            This page acknowledges the projects used and provides
-            links to their respective source code and licences.
+            Comet 2.0 uses independently developed open-source
+            software. This page acknowledges these projects and
+            provides links to their source code and licences.
         </p>
-    </header>
+    </div>
 
-    <main>
-        <section>
-            <h2>discord.js</h2>
+    <section>
+        <h2>discord.js</h2>
 
-            <p>
-                Comet 2.0 uses
+        <p>
+            Comet 2.0 uses
+            <a href="https://github.com/discordjs/discord.js">
+                discord.js
+            </a>,
+            a JavaScript library that allows applications to
+            interact with the Discord API.
+        </p>
+
+        <ul>
+            <li><strong>Project:</strong> discord.js</li>
+            <li><strong>Licence:</strong> Apache License 2.0</li>
+            <li>
+                <strong>Source code:</strong>
                 <a href="https://github.com/discordjs/discord.js">
-                    discord.js
-                </a>,
-                a JavaScript library that allows applications to
-                interact with the Discord API.
-            </p>
+                    GitHub Repository
+                </a>
+            </li>
+            <li>
+                <strong>Licence:</strong>
+                <a href="https://github.com/discordjs/discord.js/blob/main/LICENSE">
+                    View licence
+                </a>
+            </li>
+        </ul>
 
-            <ul>
-                <li><strong>Project:</strong> discord.js</li>
-                <li><strong>Licence:</strong> Apache License 2.0</li>
-                <li>
-                    <strong>Source code:</strong>
-                    <a href="https://github.com/discordjs/discord.js">
-                        GitHub Repository
-                    </a>
-                </li>
-                <li>
-                    <strong>Licence:</strong>
-                    <a href="https://github.com/discordjs/discord.js/blob/main/LICENSE">
-                        View licence
-                    </a>
-                </li>
-            </ul>
-
-            <p>
-                Copyright 2021 Noel Buechler and Copyright 2015 Amish Shah.
-                discord.js is an independent third-party project.
-            </p>
-        </section>
-
-        <section>
-            <h2>chess.js</h2>
-
-            <p>
-                Comet 2.0's chess functionality uses
-                <a href="https://github.com/jhlywa/chess.js">
-                    chess.js
-                </a>,
-                a JavaScript chess library providing move generation,
-                move validation and game-state management.
-            </p>
-
-            <ul>
-                <li><strong>Project:</strong> chess.js</li>
-                <li><strong>Author:</strong> Jeff Hlywa and contributors</li>
-                <li><strong>Licence:</strong> BSD 2-Clause License</li>
-                <li>
-                    <strong>Source code:</strong>
-                    <a href="https://github.com/jhlywa/chess.js">
-                        GitHub Repository
-                    </a>
-                </li>
-                <li>
-                    <strong>Licence:</strong>
-                    <a href="https://github.com/jhlywa/chess.js/blob/master/LICENSE">
-                        View licence
-                    </a>
-                </li>
-            </ul>
-
-            <p>
-                Copyright &copy; 2025 Jeff Hlywa.
-                chess.js is an independent third-party project.
-            </p>
-        </section>
-
-        <section>
-            <h2>Stockfish</h2>
-
-            <p>
-                Comet 2.0's chess functionality uses
-                <a href="https://github.com/official-stockfish/Stockfish">
-                    Stockfish
-                </a>,
-                a free and open-source chess engine. It is used to
-                provide chess-playing functionality against the bot.
-            </p>
-
-            <ul>
-                <li><strong>Project:</strong> Stockfish</li>
-                <li><strong>Developers:</strong> Stockfish developers</li>
-                <li>
-                    <strong>Licence:</strong>
-                    GNU General Public License v3.0 (GPL-3.0)
-                </li>
-                <li>
-                    <strong>Source code:</strong>
-                    <a href="https://github.com/official-stockfish/Stockfish">
-                        GitHub Repository
-                    </a>
-                </li>
-                <li>
-                    <strong>Licence:</strong>
-                    <a href="https://github.com/official-stockfish/Stockfish/blob/master/Copying.txt">
-                        View GPL-3.0 licence
-                    </a>
-                </li>
-            </ul>
-
-            <p>
-                Stockfish is an independent third-party project.
-                It is distributed under the GNU GPL v3.0.
-                Any redistribution of Stockfish must comply with
-                the licence, including the applicable source-code
-                availability requirements.
-            </p>
-        </section>
-<section>
-    <h2>Local software usage</h2>
-
-    <p>
-        Stockfish is installed and operated locally on the
-        Raspberry Pi hosting Comet 2.0. It is used exclusively
-        by the chess command to provide chess-playing functionality.
-    </p>
-
-    <p>
-        The Stockfish engine is not distributed to Discord users.
-        Users interact with the chess functionality through the
-        Discord bot without receiving the Stockfish executable.
-    </p>
-
-    <p>
-        This acknowledgement does not replace or override the
-        GNU General Public License v3.0. Any future redistribution
-        of Stockfish will remain subject to its applicable
-        licence requirements.
-    </p>
-</section>
-        <section>
-            <h2>General acknowledgement</h2>
-
-            <p>
-                These projects are independently maintained and are
-                not owned by or affiliated with Comet 2.0.
-                Their respective names, source code, copyright
-                notices and licences remain the property of
-                their respective authors and contributors.
-            </p>
-
-            <p>
-                Comet 2.0 does not claim ownership of any
-                third-party software listed on this page.
-                Each project remains subject to its own
-                licence terms.
-            </p>
-        </section>
-    </main>
-
-    <footer>
         <p>
-            &copy; Comet 2.0. All rights reserved to their
-            respective owners.
+            discord.js is an independent third-party project.
+            Its copyright and licence conditions remain with
+            their respective owners.
         </p>
-    </footer>
+    </section>
+
+    <section>
+        <h2>chess.js</h2>
+
+        <p>
+            Comet 2.0's chess functionality uses
+            <a href="https://github.com/jhlywa/chess.js">
+                chess.js
+            </a>,
+            a JavaScript chess library providing move generation,
+            validation and game-state management.
+        </p>
+
+        <ul>
+            <li><strong>Project:</strong> chess.js</li>
+            <li><strong>Author:</strong> Jeff Hlywa and contributors</li>
+            <li><strong>Licence:</strong> BSD 2-Clause License</li>
+            <li>
+                <strong>Source code:</strong>
+                <a href="https://github.com/jhlywa/chess.js">
+                    GitHub Repository
+                </a>
+            </li>
+            <li>
+                <strong>Licence:</strong>
+                <a href="https://github.com/jhlywa/chess.js/blob/master/LICENSE">
+                    View licence
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            chess.js is an independent third-party project.
+            Its copyright and licence conditions must be
+            respected when using or distributing the library.
+        </p>
+    </section>
+
+    <section>
+        <h2>Stockfish</h2>
+
+        <p>
+            Comet 2.0's chess functionality uses
+            <a href="https://github.com/official-stockfish/Stockfish">
+                Stockfish
+            </a>,
+            a free and open-source chess engine used to provide
+            computer-opponent functionality.
+        </p>
+
+        <ul>
+            <li><strong>Project:</strong> Stockfish</li>
+            <li><strong>Licence:</strong> GNU GPL v3.0</li>
+            <li>
+                <strong>Source code:</strong>
+                <a href="https://github.com/official-stockfish/Stockfish">
+                    GitHub Repository
+                </a>
+            </li>
+            <li>
+                <strong>Licence:</strong>
+                <a href="https://github.com/official-stockfish/Stockfish/blob/master/Copying.txt">
+                    View GPL-3.0 licence
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            Stockfish is an independent third-party project.
+            It remains subject to the GNU General Public License
+            version 3.0.
+        </p>
+    </section>
+
+    <section>
+        <h2>Local software usage</h2>
+
+        <p>
+            Stockfish is intended to be installed and operated
+            locally on the Raspberry Pi hosting Comet 2.0.
+            It is used by the chess command to provide
+            computer-opponent functionality.
+        </p>
+
+        <p>
+            The Stockfish executable is not distributed to
+            Discord users. Users interact with the chess
+            functionality through the Discord bot without
+            receiving the engine itself.
+        </p>
+
+        <p>
+            This acknowledgement does not replace or override
+            the GNU General Public License v3.0. Any future
+            redistribution remains subject to its applicable
+            licence requirements.
+        </p>
+    </section>
+
+    <section>
+        <h2>General acknowledgement</h2>
+
+        <p>
+            The projects listed on this page are independently
+            maintained and are not owned by or affiliated with
+            Comet 2.0.
+        </p>
+
+        <p>
+            Comet 2.0 does not claim ownership of third-party
+            software, trademarks or materials. Their respective
+            copyright and licence conditions remain applicable.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <strong>☄️ Comet 2.0</strong>
+
+    <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+    </div>
+
+    <p>2026 Comet 2.0</p>
+</footer>
+
 </body>
 </html>
