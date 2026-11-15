@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Comet 2.0 | Privacy</title>
-
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Comet 2.0 | Privacy</title>  <style>
     :root {
       --bg: #0b0d12;
       --card: #121620;
@@ -166,18 +160,9 @@
         font-size: 2rem;
       }
     }
-  </style>
-
-</head>
-
-<body>
-
-  <header>
+  </style></head><body>  <header>
     <div class="nav">
-      <a class="logo" href="/">Comet 2.0</a>
-
-
-  <nav>
+      <a class="logo" href="/">Comet 2.0</a>  <nav>
     <a href="index.html">Home</a>
     <a href="privacy.html" class="active">Privacy</a>
     <a href="terms.html">Terms</a>
@@ -185,15 +170,9 @@
   </nav>
 </div>
 
-
-  </header>
-
-  <main>
-
-
-<div class="hero">
+  </header>  <main><div class="hero">
   <h1>Comet 2.0 Privacy</h1>
-  <p class="updated">Last updated: 8 November 2026</p>
+  <p class="updated">Last updated: 15 November 2026</p>
 </div>
 
 <section>
@@ -235,6 +214,7 @@
     <li>Command names and command options</li>
     <li>Information provided directly as part of a command</li>
     <li>Information temporarily required to operate an active game</li>
+    <li>Message identifiers and deletion events where required for active game management</li>
     <li>Other Discord-provided information reasonably necessary for an enabled feature</li>
   </ul>
 
@@ -276,25 +256,23 @@
   <h2>4. Messages and Command Input</h2>
 
   <p>
-    Comet primarily uses Discord application commands, such as slash
-    commands, but also supports prefix commands beginning with
-    <code>c!</code>.
+    Comet uses Discord application commands, such as slash
+    commands, and Discord interactions to provide its functionality.
   </p>
 
   <p>
-    When prefix commands are enabled, Comet may temporarily read message
-    content in order to identify and process commands beginning with
-    <code>c!</code>.
+    Comet does not support traditional message-prefix commands
+    and does not request the privileged Message Content Gateway Intent.
   </p>
 
   <p>
-    Comet may also receive message information required for features such
-    as games, command responses, and message-related functionality.
+    Comet may also receive message information required for features
+    such as games, command responses, and message-related functionality.
   </p>
 
   <p>
     Comet does not intentionally maintain a permanent history of normal
-    Discord messages, prefix commands, or general message activity.
+    Discord messages, command interactions, or general message activity.
   </p>
 </section>
 
@@ -311,43 +289,43 @@
     temporarily keep information such as the participating users,
     board state, and the current game status.
   </p>
-  
-    <h3>Chess functionality</h3>
 
-    <p>
-        Comet includes a chess command that allows users
-        to play against other Discord users or the computer.
-    </p>
+  <h3>Chess functionality</h3>
 
-    <p>
-        During an active chess game, Comet temporarily
-        processes information such as:
-    </p>
+  <p>
+    Comet includes a chess command that allows users
+    to play against other Discord users or the computer.
+  </p>
 
-    <ul>
-        <li>Discord user IDs needed to identify players</li>
-        <li>Game moves and the current board state</li>
-        <li>The selected opponent and game status</li>
-    </ul>
+  <p>
+    During an active chess game, Comet temporarily
+    processes information such as:
+  </p>
 
-    <p>
-        This information is used to operate the active
-        chess game. It is not intended to create permanent
-        player profiles or a historical record of games.
-    </p>
+  <ul>
+    <li>Discord user IDs needed to identify players</li>
+    <li>Game moves and the current board state</li>
+    <li>The selected opponent and game status</li>
+  </ul>
 
-    <p>
-        When playing against the computer, Stockfish runs
-        locally on the Raspberry Pi hosting Comet 2.0.
-        Chess gameplay is not sent to an external chess
-        engine service.
-    </p>
+  <p>
+    This information is used to operate the active
+    chess game. It is not intended to create permanent
+    player profiles or a historical record of games.
+  </p>
 
-    <p>
-        The chess functionality uses chess.js locally
-        for move validation and game-state management.
-    </p>
-  
+  <p>
+    When playing against the computer, Stockfish runs
+    locally on the Raspberry Pi hosting Comet 2.0.
+    Chess gameplay is not sent to an external chess
+    engine service.
+  </p>
+
+  <p>
+    The chess functionality uses chess.js locally
+    for move validation and game-state management.
+  </p>
+
   <p>
     This information exists to operate the active game and is not
     intended to form a permanent player database or activity history.
@@ -453,7 +431,7 @@
     limited scope.
   </p>
 </section>
-    
+
 <section>
   <h2>Website Hosting</h2>
 
@@ -487,7 +465,7 @@
     </a>.
   </p>
 </section>
-    
+
 <section>
   <h2>10. Data Requests</h2>
 
@@ -536,11 +514,7 @@
   </p>
 </section>
 
-  </main>
-
-  <footer>
-     2026 Comet 2.0
-  </footer>
-
-</body>
+  </main>  <footer>
+    2026 Comet 2.0
+  </footer></body>
 </html>
